@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayis-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+header{
+    width: 100%;
+    height: 120px;
+    margin-bottom: 50px;    
+}
+header nav{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    gap: 3vw;
+    
+}
+header  li{
+    display: inline-flex;
+}
+header li a{
+    font-family: 'Raleway', sans-serif;
+    color: var(--Bright-Blue);
+    font-weight: 400;
+}
+.banner{
+    width: 100%;
+    height: calc(70vh - 120px);    
+}
+.banner .container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.banner-text{
+    width: 600px;
+    margin-top: 10%;
+}
+.banner-text h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 52px;    
+}
+.banner-text p{
+    width: 530px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color:#555;
+    font-weight: 400;
+}
+.banner-text form{
+    display: flex;
+    gap: 15px;
+    
+}
+.banner-text form input[type='text']{
+    padding: 10px;
+    width: 300px;
+    outline: none;
+    border: 1px solid var(--Light-Gray);
+    border-radius: 3px;   
+    
+}
+.banner-text form input[type='text']::placeholder{
+    color: var(--Light-Gray);
+    font-size: 16px;
+}
+.banner-text form input[type='button']{
+    background-color: transparent;
+    border: none;
+    padding: 15px 45px;
+    background-color: var(--Bright-Blue);
+    color: var(--Light-Gray);
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 3px;
+
+}
+ .banner-img{
+    width: 600px;
+    height: auto;
+    
+}
+.banner-img img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.productive{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--Light-Grayis-Blue);
+}
+.productive .container{
+    display: flex;
+    justify-content: space-between;
+}
+.productive-text{
+    padding-top: 10%;
+    width: 600px;
+}
+.productive-text h3{
+    font-size: 35px;    
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 30px;
+}
+.productive-text p{
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.productive-text .link{
+    display: inline-flex;
+    margin-bottom: 30px;
+    color: var(--Moderate-Cyan);
+    font-size: 18px;
+    font-weight: 40px;    
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--Moderate-Cyan);
+}
+.productive-text blockquote{
+    width: 360px;    
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 3px 3px #eee;
+}
+.productive-text blockquote p{
+    width: 300px;
+    font-size: 14px;    
+}
+.info-user{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+   
+}
+.user-avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;    
+
+}
+.user-avatar img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+}
+.info-user .user-data strong{
+    font-size: 14px;
+    
+}
+.info-user .user-data{
+    font-size: 10px;
+}
+
+.productive-img{
+    padding-top: 10%;
+    width: 600px;
+    height: auto;
+    
+}
+.productive-img img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.get{
+    width: 100%;
+    height: 30vh;
+   background-color: #575989;
+}
+.get .container{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.get .container h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: #eee;
+    margin-bottom: 30px;
+}
+.get .container p{
+    width: 489px;
+    color: var(--Light-Gray);
+}
+.get .container form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;   
+}
+.get .container form input[type='text']{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px  #111;
+}
+.get .container form input[type='text']::placeholder{
+    font-size: 12px;
+    color: var(--Light-Gray);
+}
+.get .container form input[type='button']{
+    background-color: transparent;
+    padding: 15px 35px;
+    background-color: var(--Bright-Blue);
+    border: none;
+    color: #eee;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    box-shadow: 0px 2px 2px  #111;
+    border-radius: 5px;
+
+}
+footer{
+    width: 100%;
+    height: 45vh;
+    background-color: #07043b;
+    color: #eee;
+}
+footer .container{
+   padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-header{
+    flex: 1;    
+    margin-bottom: 20px;
+    
+}
+.footer-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-body-conact{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-body-conact p{
+    font-size: 16px;
+    color: var(--Light-Gray);
+}
+.footer-body-conact p img{
+    margin-right: 10px;
+
+}
+.footer-body-nav{
+    width: 100%;
+    flex: 1;     
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10%;
+    
+}
+
+.footer-body-nav nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-body-nav nav ul li{
+    display: inline-flex;
+}
+.footer-body-nav nav ul li a{
+    color: var(--Light-Gray);
+}
+.footer-body-icons{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    gap: 32px;
+}
+.footer-body-icons .bx{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    border-radius: 50%;
+    color: var(--Light-Gray);
+    font-weight: bold;
+    border: 1px solid var(--Light-Gray);
+}
+
+
+
+.attribution{
+    width: 100%;
+    margin-top: 60px;
+}
